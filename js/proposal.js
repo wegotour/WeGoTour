@@ -1,35 +1,13 @@
-document.addEventListener("DOMContentLoaded", async () => {
-    try {
-        const response = await fetch('../json/isi proposal.json'); // Mengambil file userData.json
-        if (!response.ok) {
-            throw new Error('Failed to fetch data');
-        }
-        const userData = await response.json();
+import data from "../json/isi.json" assert { type: "json" };
+import { setInner } from "https://jscroot.github.io/element/croot.js";
 
-        // Select elements by their IDs
-        const judulElement = document.getElementById("judul-proposal");
-        const latarElement = document.getElementById("latar-belakang");
-        const isiElement = document.getElementById("isi-proposal");
-        const judul2Element = document.getElementById("judul2-proposal");
-        const isi2Element = document.getElementById("isi2-proposal");
-        const judul3Element = document.getElementById("judul3-proposal");
-        const isi3Element = document.getElementById("isi3-proposal");
-        const judul4Element = document.getElementById("judul4-proposal")
-        const isi4Element = document.getElementById("isi4-proposal")
-
-
-        // Populate HTML elements with user data
-        judulElement.textContent = userData.Judul;
-        latarElement.textContent = userData.Latar;
-        isiElement.textContent = userData.Isi;
-        judul2Element.textContent = userData.Judul2;
-        isi2Element.innerHTML = userData.Isi2.replace(/\n/g, '<br>');
-        judul3Element.textContent = userData.Judul3;
-        isi3Element.innerHTML = userData.Isi3.replace(/\n/g, '<br>');
-        judul4Element.textContent = userData.Judul4;
-        isi4Element.innerHTML = userData.Isi4.replace(/\n/g, '<br>');
-
-    } catch (error) {
-        console.error('Error:', error);
-    }
-});
+setInner("deskripsi", data.deskripsi);
+setInner("isideskripsi", data.isideskripsi);
+setInner("latarbelakang", data.latarbelakang);
+setInner("isilatarbelakang", data.isilatarbelakang);
+setInner("tujuan", data.tujuan);
+setInner("isitujuan", data.isitujuan);
+setInner("manfaat", data.manfaat);
+setInner("isimanfaat", data.isimanfaat);
+setInner("kesimpulan", data.kesimpulan);
+setInner("isikesimpulan", data.isikesimpulan);
