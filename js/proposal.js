@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch('./json/isiproposal.json'); // Mengambil file userData.json
+        const response = await fetch('../json/isiproposal.json'); // Mengambil file userData.json
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
