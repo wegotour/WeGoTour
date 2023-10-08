@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const isiElement = document.getElementById("isi-proposal");
         const judul2Element = document.getElementById("judul2-proposal");
         const isi2Element = document.getElementById("isi2-proposal");
-        const judul3Element = document.getElementById("judul3-proposal")
-        const isi3Element = document.getElementById("isi3-proposal")
+        const judul3Element = document.getElementById("judul3-proposal");
+        const isi3Element = document.getElementById("isi3-proposal");
         const judul4Element = document.getElementById("judul4-proposal")
         const isi4Element = document.getElementById("isi4-proposal")
 
