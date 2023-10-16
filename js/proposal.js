@@ -9,5 +9,3 @@ setInner("tujuan", data.tujuan);
 setInner("isitujuan", data.isitujuan);
 setInner("manfaat", data.manfaat);
 setInner("isimanfaat", data.isimanfaat);
-setInner("kesimpulan", data.kesimpulan);
-setInner("isikesimpulan", data.isikesimpulan);
